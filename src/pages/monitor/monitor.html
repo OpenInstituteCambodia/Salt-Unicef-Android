@@ -49,7 +49,7 @@
       </ion-row>
            
       <!-- Location -->
-      <ion-item>
+      <ion-item [hidden]="locDisabled==1">
         <ion-label >{{'m_location' | translate }}</ion-label>
         <ion-input  type="text" name="location" [(ngModel)]="monitorMeasurementData.location" [ngModelOptions]="{standalone: true}" [disabled]="locDisabled"></ion-input>
       </ion-item>
@@ -97,7 +97,7 @@
       </ion-item>
 
       <!-- Submit button -->
-      <div padding>
+      <div padding  class="btnEnter">
         <button ion-button color="primary" block (click)="saveMonitorData()">{{'p_send' | translate }}</button>
       </div>
     </ion-list>

@@ -40,4 +40,14 @@ page-monitor {
         }
       }
 
+      .btnEnter{
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        [ion-button]{
+          height: 60px;
+          font-size:  18px;
+        }
+      }
+
 }
